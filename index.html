@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180076082-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180076082-1');
+</script>
+
+  <title>Self-Affirmed Refactoring Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 1700px}
+	
+	/* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+	
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 50%; /* Set width to 100% */
+      margin: auto;
+      min-height:50px;
+  }
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+	 /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+	
+ 
+  }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Core Research</a></li>
+        <li class="active"><a href="index2.html">Other Research</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <div id="sidebar" class="left">
+		
+		
+       <div id="main" class="right">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./Images/a11y.png" height="200" width="200" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="./Images/a11y2.jpg" height="400" width="400" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- Sidebar 
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b></b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens 
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><a href="./W4A22_index.html">On the Identification of Accessibility Bug Reports in Open Source Systems</a></h1>
+	  <p><strong><em>Published at the 19th International Web for All Conference (W4A’22) </em></strong><a href="./Preprint/W4A_22_Preprint.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a> <a href="https://ieeexplore.ieee.org/document/8844429"><i class="fa fa-graduation-cap" style="font-size:24px;color:blue"></i></a></p>
+      <p>Manual inspection of a large number of bug reports to identify accessibility-related ones is time-consuming and error-prone. Prior research has investigated mobile app user reviews classification for various purposes, including bug reports identification, feature request identification, app performance optimization etc. Yet, none of the prior research has investigated the identification of accessibility-related bug reports, making their prioritization and timely correction difficult for software developers. To support developers with this manual process, the goal of this paper is to automatically detect, for a given bug report, whether it is about accessibility or not. Thus, we tackle the identification of accessibility bug reports as a binary classification problem. To build our model, we rely on an existing dataset of manually curated accessibility bug reports extracted from popular open-source projects, namely Mozilla Firefox and Google Chromium. We design our solution to learn from these reports the appropriate discriminative features i.e., keywords that properly represent accessibility issues. Our trained model is evaluating using stratified cross-validation, along with a comparison with various baselines models using keyword-based matching as a solution. Findings show that our classifier achieves high F1-scores of 93%.</p>
+      <p>More specifically, we investigated the following research questions:</p>
+      <p><strong>RQ1.</strong> Can we accurately detect accessibility - related bug reports?</p>
+      <p><strong>RQ2.</strong> What is the size of the training dataset needed for the classification to effectively identify accessibility bug reports?</p>
+      
+    </div>
+  </div>
+<hr>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><a href="./CHI21_index.html">Finding the Needle in a Haystack: On the Automatic Identification of Accessibility User Reviews</a></h1>
+	  <p><strong><em>Published at the International Conference on Human-Computer Interaction (CHI'21)</em></strong><a href="./Preprint/CHI_21_Preprint.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a> <a href="https://ieeexplore.ieee.org/document/8844429"><i class="fa fa-graduation-cap" style="font-size:24px;color:blue"></i></a></p>
+	  <p>In recent years, mobile accessibility has become an important trend with the goal of allowing all users the possibility of using any app without many limitations. User reviews include insights that are useful for app evolution. However, with the increase in the amount of received reviews, manually analyzing them is tedious and time-consuming, especially when searching for accessibility reviews. The goal of this paper is to support the automated identification of accessibility in user reviews, to help technology professionals in prioritizing their handling, and thus, creating more inclusive apps. Particularly, we design a model that takes as input accessibility user reviews, learns their keyword-based features, in order to make a binary decision, for a given review, on whether it is about accessibility or not. The model is evaluated using a total of 5326 mobile app reviews. The findings show that (1) our model can accurately identify accessibility reviews, outperforming two baselines, namely keyword-based detector and a random classifier; (2) our model achieves an accuracy of 80.7% with relatively small training dataset; however, the accuracy improves as we increase the size of the training dataset.</em></strong></p>
+      <p>Our empirical study focused on investigating whether the developer perception of quality
+improvement (as expected by developers) aligns with the
+real quality improvement (as assessed by quality metrics).</p>
+<p>In particular, we addressed the following research question:</p>
+<p><strong>RQ1.</strong> To what extent machine learning models can accurately distinguish accessibility reviews from non-accessibility reviews?</p>
+<p><strong>RQ2.</strong> How effective is our machine learning approach in identifying accessibility reviews?</p>
+<p><strong>RQ3.</strong> What is the size of the training dataset needed for the classification to effectively identify accessibility reviews?</p>
+    </div>
+  </div><hr>
+
+
+  
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><a href="./CDMA22_index.html">Automatic Classification of Accessibility User Reviews in Android Apps</a></h1>
+	  <p><strong><em>Published at the 7th International Conference  on Data Science and Machine Learning Applications (CDMA'22) </em></strong><a href="./Preprint/CDMA22_Preprint.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a> <a href="https://www.sciencedirect.com/science/article/pii/S095741742030912X"><i class="fa fa-graduation-cap" style="font-size:24px;color:blue"></i></a></p>
+      <p>In recent years, mobile applications have gained popularity for providing information, digital services, and content to users including users with disabilities. However, recent studies have shown that even popular mobile apps are facing issues related to accessibility, which hinders their usability experience for people with disabilities. For discovering these issues in the new app releases, developers consider user reviews published on the official app stores. However, it is a challenging and time-consuming task to identify the type of accessibility-related reviews manually. Therefore, in this study, we have used supervised learning techniques, namely, Extra Tree Classifier (ETC), Random Forest, Support Vector Classification, Decision Tree, K-Nearest Neighbors (KNN), and Logistic Regression for automated classification of 2,663 Android app reviews based on four types of accessibility guidelines, i.e., Principles, Audio/Images, Design and Focus. Results have shown that the ETC classifier produces the best results in the automated classification of accessibility app reviews with 93% accuracy.</p>
+<p>In particular, we addressed the following research questions:</p>
+<p><strong>RQ.</strong> To what extent can machine learning models accurately distinguish different types of accessibility reviews?</p>
+    </div>
+  </div><hr>
+  
+
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><a href="./ASEW21_index.html">Learning Sentiment Analysis for Accessibility User Reviews</a></h1>
+	  <p><strong><em>Published at the 36th IEEE/ACM International Conference on Automated Software Engineering Workshops (ASEW'21)</em></strong><a href="./Preprint/ASEW_21_Preprint.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a> <a href="https://www.sciencedirect.com/science/article/pii/S016412122030217X"><i class="fa fa-graduation-cap" style="font-size:24px;color:blue"></i></a> <a href="https://www.youtube.com/watch?v=2wsnDOFm40Y"><i class="fa fa-file-video-o" style="font-size:24px;color:black"></i></a></p>
+      <p>Nowadays, people use different ways to express emotions and sentiments such as facial expressions, gestures, speech, and text. With the exponentially growing popularity of mobile applications (apps), accessibility apps have gained importance in recent years as it allows users with specific needs to use an app without many limitations. User reviews provide insightful information that helps for app evolution. Previously, work has been done on analyzing the accessibility in mobile applications using machine learning approaches. However, to the best of our knowledge, there is no work done using sentiment analysis approaches to understand better how users feel about accessibility in mobile apps. To address this gap, we propose a new approach on an accessibility reviews dataset, where we use two sentiment analyzers, i.e., TextBlob and VADER along with Term Frequency—Inverse Document Frequency (TF-IDF) and Bag-of-words (BoW) features for detecting the sentiment polarity of accessibility app reviews. We also applied six classifiers including, Logistic Regression, Support Vector, Extra Tree, Gaussian Naive Bayes, Gradient Boosting, and Ada Boost on both sentiments analyzers. Four statistical measures namely accuracy, precision, recall, and F1-score were used for evaluation. Our experimental evaluation shows that the TextBlob approach using BoW features achieves better results with accuracy of 0.86 than the VADER approach with accuracy of 0.82.</p>
+<p>In particular, we addressed the following research questions:</p>
+<p><strong>RQ1.</strong> How do users express their sentiments in their accessibility app review?</p>
+<p><strong>RQ2.</strong> How effective is our proposed sentiment analysis based approach in the identification of accessibility reviews?</p>
+    </div>
+  </div><hr>
+  
+    <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"><a href="./Education_Sciences21.html">I Cannot See You—The Perspectives of Deaf Students to Online Learning during COVID-19 Pandemic: Saudi Arabia Case Study</a></h1>
+	  <p><strong><em>Published at the Education Sciences Journal </em></strong><a href="./Preprint/Education_Sciences_21_Preprint.pdf"><i class="fa fa-file-pdf-o" style="font-size:24px;color:red"></i></a> <a href="https://www.springerprofessional.de/how-do-developers-refactor-code-to-improve-code-reusability/18643092"><i class="fa fa-graduation-cap" style="font-size:24px;color:blue"></i></a> <a href="https://www.youtube.com/watch?v=FjWiRO5EM9w"><i class="fa fa-file-video-o" style="font-size:24px;color:black"></i></a></p>
+      <p>The COVID-19 pandemic brought about many challenges to course delivery methods,
+which have forced institutions to rapidly change and adopt innovative approaches to provide remote
+instruction as effectively as possible. Creating and preparing content that ensures the success of
+all students, including those who are deaf and hard-of-hearing has certainly been an all-around
+challenge. This study aims to investigate the e-learning experiences of deaf students, focusing on
+the college of the Technical and Vocational Training Corporation (TVTC) in the Kingdom of Saudi
+Arabia (KSA). Particularly, we study the challenges and concerns faced by deaf students during the
+sudden shift to online learning. We used a mixed-methods approach by conducting a survey as well
+as interviews to obtain the information we needed. Our study delivers several important findings.
+Our results report problems with internet access, inadequate support, inaccessibility of content from
+learning systems, among other issues. Considering our findings, we argue that institutions should
+consider a procedure to create more accessible technology that is adaptable during the pandemic to
+serve individuals with diverse needs.</p>
+<p>In particular, we addressed the following research questions:</p>
+<p><strong>RQ.</strong> What are the challenges and concerns that deaf and hard-of-hearing students are having with an online education during COVID-19 pandemic?</p>
+    </div>
+  </div><hr>
+  
+
+</div>
+
+
+
+
+  
+<div class="container text-center">    
+  <h3></h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+    
+    </div>
+    <div class="col-sm-4"> 
+          
+    </div>
+
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+<!-- Google Analytics -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');ga('create','UA-180076082-1','auto');ga('send','pageview');</script>
+</body>
+
+</html>
