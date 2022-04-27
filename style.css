@@ -563,7 +563,7 @@ blog-content-wrapper { padding: 10px 5px; }
         color: var(--foreground-secondary);
     }
 
-    .topic-btn:hover icon-box {
+    .topic-btn:hover .icon-box {
         background: var(--lime-green);
         color: var(--white);
     }
